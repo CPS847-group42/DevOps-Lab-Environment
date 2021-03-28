@@ -12,5 +12,5 @@ python:
 install:
   - pip install -r requirements.txt
 
-script:
-  - pytest
+script: coverage run unittest_api.py
+after_success: bash <(curl -s https://codecov.io/bash)
