@@ -31,9 +31,9 @@ def get_textbooks():
     today8am = local_time.replace(hour=8, minute=0, second=0, microsecond=0)
     today4pm = local_time.replace(hour=16, minute=0, second=0, microsecond=0)
     if local_time < today4pm and local_time > today8am:
-        print('Accessed during school time')
+        print('Accessed during school time.')
     else:
-        print('Accessed after school time')
+        print('Accessed after school time.')
         
 
     return jsonify({'textbooks': textbooks})
