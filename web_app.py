@@ -1,75 +1,40 @@
 #!flask/bin/python
 from flask import Flask, jsonify
+from datetime import datetime
+
 app = Flask(__name__)
 textbooks = [
     {
-        'name':,
-        'id'
+        'title': u"Introduction to Algorithms" ,
+        'id': 1,
+        'authors': [u"Thomas H. Cormen", u"Charles E. Leiserson", u"Ronald L. Rivest", u"Clifford Stein" ],
+        'ISBN': 9780262033848,
+        'edition': 3 
 
     },
+
     {
+        'title': u"Computer Networking: A Top-down Approach" ,
         'id': 2,
-        'title': u'Learn Python',
-        'description': u'Need to find a good Python tutorial on the web',
-        'done': False
-    }
+        'authors': [u"James F. Kurose", u"Kieth W. Ross"],
+        'ISBN': 9780133594140,
+        'edition': 7 
+
+    },
+    
 ]
 
 @app.route('/io', methods=['GET'])
-def get_tasks():
+def get_textbooks():
 
-    if 1 == 1:
-        print('Yes')
+    local_time = datetime.now()
+    today8am = local_time.replace(hour=8, minute=0, second=0, microsecond=0)
+    today4pm = local_time.replace(hour=16, minute=0, second=0, microsecond=0)
+    if local_time < today4pm and local_time > today8am:
+        print('Accessed during school time')
     else:
-        print('no')
-        print('Yes')
-        print('Yes')
-        print('Yes')
-        print('Yes')
-        print('Yes')
-        print('Yes')
-        print('Yes')
-        print('Yes')
-        print('Yes')
-        print('Yes')
-        print('Yes')
-        print('Yes')
-        print('Yes')
-        print('Yes')
-        print('Yes')
-        print('Yes')
-        print('Yes')
-        print('Yes')
-        print('Yes')
-        print('Yes')
-        print('Yes')
-        print('Yes')
-        print('Yes')
-        print('Yes')
-        print('Yes')
-        print('Yes')
-        print('Yes')
-        print('Yes')
-        print('Yes')
-        print('Yes')
-        print('Yes')
-        print('Yes')
-        print('Yes')
-        print('Yes')
-        print('Yes')
-        print('Yes')
-        print('Yes')
-        print('Yes')
-        print('Yes')
-        print('Yes')
-        print('Yes')
-        print('Yes')
-        print('Yes')
-        print('Yes')
-        print('Yes')
-        print('Yes')
-        print('Yes')
-        print('Yes')
+        print('Accessed after school time')
+        
 
     return jsonify({'textbooks': textbooks})
 
