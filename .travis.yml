@@ -16,3 +16,4 @@ after_success:
   - bash <(curl -s https://codecov.io/bash)
   - docker build -t group42/a2 .
   - docker run -d -p 5000:5000 group42/a2 /bin/sh
+  - docker ps -a
