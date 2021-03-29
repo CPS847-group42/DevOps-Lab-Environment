@@ -20,15 +20,15 @@ after_success:
 
 deploy:
   provider: elasticbeanstalk
-  access_key_id: access-key-id
+  access_key_id: $access-key-id
   secret_access_key:
-    secure: "secret-access-key"
+    secure: $secret-access-key
   region: "ca-central-1"  
   app: "elastic-beanstalk-helloworld"
   env: "elastic-beanstalk-helloworld-dev"
   bucket_name: "elasticbeanstalk-ca-central-helloworld"
   on:
-    branch: main
+    branch: master
     
 after_deploy:
   - echo "done deploying"
