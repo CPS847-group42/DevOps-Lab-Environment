@@ -26,6 +26,7 @@ deploy:
   app: "helloworld"
   env: "helloworld-dev"
   bucket_name: "elasticbeanstalk-ca-central-helloworld"
+  local_dir: AWS
   on:
     branch: main
     
