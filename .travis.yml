@@ -23,8 +23,8 @@ deploy:
   access_key_id: $ACCESS_KEY_ID
   secret_access_key: $SECRET_ACCESS_KEY_ID
   region: "ca-central-1"  
-  app: "helloworld"
-  env: "helloworld-dev"
+  app: "index"
+  env: "index-dev"
   bucket_name: "elasticbeanstalk-ca-central-helloworld"
   local_dir: AWS
   on:
