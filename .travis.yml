@@ -20,9 +20,9 @@ after_success:
 
 deploy:
   provider: elasticbeanstalk
-  access_key_id: "AKIAYFM4IMAVTYGBYHTW" 
+  access_key_id: access-key-id
   secret_access_key:
-    secure: "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"
+    secure: "secret-access-key"
   region: "ca-central-1"  
   app: "elastic-beanstalk-helloworld"
   env: "elastic-beanstalk-helloworld-dev"
