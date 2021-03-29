@@ -28,7 +28,7 @@ deploy:
   env: "elastic-beanstalk-helloworld-dev"
   bucket_name: "elasticbeanstalk-ca-central-helloworld"
   on:
-    branch: master
+    branch: main
     
 after_deploy:
   - echo "done deploying"
