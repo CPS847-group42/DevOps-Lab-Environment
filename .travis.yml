@@ -9,9 +9,6 @@ python:
   - "3.8"
   - "3.9"
 
-env:
-  - CODECOV_TOKEN='c2b06ef6-34d6-41ab-ab11-f27493f3bc1a'
-
 install:
   - pip install -r requirements.txt
 
@@ -19,4 +16,4 @@ script:
   - coverage run unittest_api.py
 
 after_success: 
-  - bash <(curl -s https://codecov.io/bash)
+  - bash <(curl -s https://codecov.io/bash) -t c2b06ef6-34d6-41ab-ab11-f27493f3bc1a
