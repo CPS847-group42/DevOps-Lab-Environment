@@ -1,5 +1,5 @@
 #!flask/bin/python
-from flask import Flask, jsonify
+from flask import Flask, jsonify, render-template
 from datetime import datetime
 
 app = Flask(__name__)
@@ -40,7 +40,7 @@ def get_textbooks():
 
 @app.route('/')
 def index():
-    return "Hello, World!"
+    return render_template('index.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
