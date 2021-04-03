@@ -9,4 +9,4 @@ RUN pip install -r requirements-EB.txt
 
 EXPOSE 5000
 
-CMD ["python","app.py"]
+CMD ["python","hello_world_app.py"]
