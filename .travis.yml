@@ -22,7 +22,7 @@ deploy:
   provider: elasticbeanstalk
   access_key_id: $ACCESS_KEY_ID
   secret_access_key: $SECRET_ACCESS_KEY_ID
-  region: "us-east-2"
+  region: us-east-2
   app: "helloworld"
   env: "helloworld-env"
   bucket_name: "helloworld-env.eba-tt3yhkvf.us-east-2.elasticbeanstalk"
