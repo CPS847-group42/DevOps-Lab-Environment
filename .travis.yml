@@ -26,7 +26,7 @@ deploy:
   app: "helloworld"
   env: "helloworld-env"
   bucket_name: "helloworld-env.eba-tt3yhkvf.us-east-2.elasticbeanstalk"
-  local_dir: AWS-EB
+  local_dir: EB-AWS
   on:
     branch: master
     
