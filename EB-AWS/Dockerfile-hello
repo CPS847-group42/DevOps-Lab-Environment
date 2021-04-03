@@ -7,6 +7,6 @@ ADD . /docker-flask-test
 RUN pip install -r requirements-EB.txt
 
 
-EXPOSE 5000
+EXPOSE 80
 
 CMD ["python","hello_world_app.py"]
