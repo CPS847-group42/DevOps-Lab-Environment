@@ -28,7 +28,7 @@ deploy:
   bucket_name: "helloworld-env.eba-tt3yhkvf.us-east-2.elasticbeanstalk"
   local_dir: EB-AWS
   on:
-    branch: master
+    branch: main
     
 after_deploy:
   - echo "done deploying"
