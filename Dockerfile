@@ -6,6 +6,6 @@ ADD . /a2-group42
 
 RUN pip install -r requirements.txt
 
-EXPOSE 80
+EXPOSE 5000
 
 CMD ["python","web_app.py"]
