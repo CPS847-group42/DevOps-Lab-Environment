@@ -25,7 +25,7 @@ deploy:
   region: "us-east-1"  
   app: "helloworld"
   env: "helloworld-env"
-  bucket_name: "helloworld-env.eba-pzk3j3r7.ca-central-1.elasticbeanstalk"
+  bucket_name: "helloworld-env.eba-tt3yhkvf.us-east-2.elasticbeanstalk"
   on:
     branch: master
     
